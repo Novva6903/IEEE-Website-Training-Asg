@@ -1,0 +1,374 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(255, 245, 245);
+}
+
+#nav {
+    background: white;
+    top: 0;
+    width: 100%;
+    height: 90px;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+}
+
+.logo {
+    width: 30%;
+    font-family: 'Bad Script', cursive;
+    margin-left: 3%;
+    font-size: 32px;
+}
+
+.navbar {
+    font-size: 20px;
+    width: 40%;
+    margin-right: 3%;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgb(26, 26, 26);
+    transition: 0.5s;
+}
+
+.navbar a:hover {
+    color: rgb(127, 105, 105);
+    text-decoration: underline;
+}
+
+.logo a {
+    text-decoration: none;
+    color: rgb(26, 26, 26);
+    transition: 0.5s;
+}
+
+.logo a:hover {
+    color: rgb(127, 105, 105);
+}
+
+#home {
+    margin-top: 90px;
+    width: 100%;
+    height: 42vw;
+    background-image: url(asset/bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hometext {
+    margin-left: 10%;
+    font-family: 'Poppins', sans-serif;
+    line-height: 5.35vw;
+    letter-spacing: 0.36vw;
+}
+
+.hometext p:nth-child(1) {
+    font-weight: 600;
+    font-size: 2.408vw;
+}
+
+.hometext p:nth-child(2) {
+    font-size: 3.21vw;
+}
+
+.hometext p:nth-child(3) {
+    font-size: 1.605vw;
+}
+
+.hometext p:nth-child(4) {
+    line-height: 0;
+    font-size: 1.605vw;
+}
+
+span {
+    font-family: 'Bad Script', cursive;
+    font-weight: bold;
+}
+
+.homeimg {
+    margin-right: 12%;
+    width: 17.5%;
+    height: 60%;
+    background-image: url(asset/gambar.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#homebox {
+    margin-top: -11.3%;
+    margin-left: 12.5%;
+    width: 75%;
+    height: 22.07vw;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutimg {
+    width: 13.37vw;
+    height: 16.72vw;
+    background-image: url(asset/aboutBox.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.abouttext {
+    margin-left: 10%;
+    width: 45%;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+}
+
+.abouttext p:nth-child(1) {
+    font-size: 2.408vw;
+    font-weight: 600;
+    line-height: 5vw;
+    text-decoration: underline;
+}
+
+.abouttext p:nth-child(2) {
+    font-size: 1.20vw;
+}
+
+#skills {
+    margin-top: 15vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill {
+    font-family: 'Poppins', sans-serif;
+    font-size: 5vw;
+    font-weight: bold;
+    color: rgb(26, 26, 26);
+    text-decoration: underline;
+}
+
+.boxes {
+    margin-top: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 300px;
+    height: 320px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    flex-direction: column;
+    transition: 0.5s;
+}
+
+.box:hover {
+    transform: translateY(-20px);
+    box-shadow: 0px 20px 8px rgba(0,0,0,0.2);
+}
+
+.one {
+    background-image: url(asset/skill1.png);
+}
+
+.two {
+    background-image: url(asset/skill2.png);
+}
+
+.three {
+    background-image: url(asset/skill3.png);
+}
+
+.num {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.title {
+    margin-top: 3%;
+    color: white;
+    font-size: 18px;
+}
+
+.boxtext {
+    margin-top: 3%;
+    text-align: center;
+    width: 75%;
+    font-size: 12px;
+    color: #8F8F8F;
+}
+
+#contact {
+    margin-top: 5%;
+    width: 100%;
+    height: 30vw;
+    background-color: rgb(41, 38, 38);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.circles {
+    width: 70%;
+    height: 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.5%;
+}
+
+.circle {
+    width: 8vw;
+    height: 8vw;
+    border-radius: 8vw;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+}
+
+.oneC {
+    background-image: url(asset/ig.png);
+}
+
+.twoC {
+    background-image: url(asset/youtube.png);
+}
+
+.threeC {
+    background-image: url(asset/linkedin.png);
+}
+
+.fourC {
+    background-image: url(asset/github-logo.png);
+}
+
+#contact p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2vw;
+    color: white;
+}
+
+.circles a {
+    transition: 0.5s;
+}
+
+.circles a:hover {
+    opacity: 60%;
+}
+
+@media screen and (max-width: 1124px) {
+    .boxes {
+        justify-content: center;
+    }
+
+    .box {
+        margin: 3%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .logo {
+        width: 0%;
+        font-size: 0px;
+        margin-left: 0;
+        position: absolute;
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+    .box {
+        width: 200px;
+        height: 220px;
+    }
+
+    .num {
+        width: 30px;
+        height: 30px;
+        font-size: 10px;
+    }
+
+    .title {
+        font-size: 14px;
+    }
+    
+    .boxtext {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #nav {
+        height: 60px;
+    }
+
+    #home {
+        margin-top: 60px;
+    }
+
+    .navbar {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    #homebox {
+        width: 70%;
+        height: 40vw;
+        margin-left: 15%;
+    }
+
+    .aboutimg {
+        width: 23vw;
+        height: 29vw;
+    }
+
+    .abouttext p:nth-child(1) {
+        font-size: 4vw;
+        font-weight: 600;
+        line-height: 8vw;
+    }
+    
+    .abouttext p:nth-child(2) {
+        font-size: 1.8vw;
+    }
+
+    #skills {
+        margin-top: 35vw;
+    }
+}
